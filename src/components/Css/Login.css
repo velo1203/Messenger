@@ -1,0 +1,94 @@
+.login{
+    position: fixed;
+    width: 100%;
+}
+
+.lg-back{
+    font-size: 25px;
+    margin: 5px;
+    color: #628AF2;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 35px;
+    position: relative;
+    left: 25px;
+    top: 25px;
+    display: none;
+}
+
+.lg-back:hover{
+    color: #87a5f1;
+}
+
+.lg-container{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 120px;
+}
+.lg-title h4{
+    font-size: 38px;
+    color: #628AF2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lg-input{
+    max-width: 500px;
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid #628AF2;
+    padding-left: 25px;
+    font-size: 15px;
+    margin: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lg-form{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.lg-submit{
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #628AF2;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: all 0.2s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lg-submit:hover{
+    background-color: #87a5f1;
+}
+
+.lg-forgot{
+    color:#C0C0C0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.lg-forgot:hover{
+    color: #628AF2;
+}
+
+@media screen and (max-width: 968px) {
+    .login{
+        left: 0px;
+    }
+    .lg-back{
+        display: block;
+    }
+    .lg-container{
+        margin-top: 50px;
+    }
+}

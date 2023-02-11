@@ -1,0 +1,85 @@
+.Signup{
+    position: fixed;
+    width: 100%;
+}
+
+.sg-btn{
+    background-color: #628AF2;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: all 0.2s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sg-btn:hover{
+    background-color: #87a5f1;
+}
+
+.sg-back{
+    font-size: 25px;
+    margin: 5px;
+    color: #628AF2;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 35px;
+    position: relative;
+    left: 25px;
+    top: 25px;
+    display: none;
+}
+
+.sg-back:hover{
+    color: #87a5f1;
+}
+
+.sg-container{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 120px;
+}
+.sg-title h4{
+    font-size: 38px;
+    color: #628AF2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.sg-form{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sg-input{
+    max-width: 500px;
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid #628AF2;
+    padding-left: 25px;
+    font-size: 15px;
+    margin: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sg-submit{
+    width: 150px;
+    height: 50px;
+    margin-top: 35px;
+    
+}
+
+@media screen and (max-width: 968px) {
+    .Signup{
+        left: 0px;
+    }
+    .sg-back{
+        display: block;
+    }
+    .sg-container{
+        margin-top: 50px;
+    }
+}

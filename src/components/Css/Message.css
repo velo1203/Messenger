@@ -1,0 +1,143 @@
+.Message-body{
+    display: flex;
+}
+
+
+.user-tab{
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    z-index: 4;
+    background-color: #FBFBFB;
+    margin-left: 200px;
+    padding: 30px;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 스크롤바 없애기 */
+.user-tab {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.user-tab::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+/* 여기까지 */
+
+.ut-back{
+    position: relative;
+    font-size: 25px;
+    margin: 5px;
+    color: #628AF2;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: none;
+}
+
+.ut-back:hover{
+    color: #87a5f1;
+}
+
+.ut-title{
+    font-size: 40px;
+    color: #628AF2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.ut-items{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ut-item{
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 375px;
+    height: 80px;
+    border-radius: 15px 0px 0px 15px;
+    padding-left: 15px;
+    background: #F8F8F8;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+    overflow: hidden;
+
+}
+.ut-on{
+    background-color: #628AF2;
+}
+
+.ut-on > div > h4{
+    color: #F8F8F8;
+}
+.ut-on > div > p{
+    color: #DFDFDF;
+}
+
+
+.ut-profile{
+    width: 60px;
+    height: 60px;
+    
+}
+
+.ut-active{
+    position: absolute;
+    left: 80px;
+    width: 25px;
+    height: 25px;
+    
+}
+
+.profile-content{
+    margin-left: 10px;
+}
+
+.profile-content h4{
+    width: 200px;
+    font-size: 20px;
+    color: #6D6D6D;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.profile-content p{
+    width: 200px;
+    font-size: 15px;
+    color: #C0C0C0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.chat-mode{
+    display: block;
+}
+
+@media screen and (max-width: 968px) {
+
+    .ut-back{
+        display: block;
+    }
+    .user-tab{
+        position: fixed;
+        margin-left: 0;
+        width: 50%;
+    
+    }
+    .ut-item{
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 15px 15px 15px 15px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .user-tab{
+        width: 100%;
+    }
+}

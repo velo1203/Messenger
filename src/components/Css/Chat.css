@@ -1,0 +1,152 @@
+.Chat {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-left: 550px;
+    background-color: #F8F8F8;
+}
+
+.ch-header {
+    width: 100%;
+    position: fixed;
+    background-color: #9DB4F1;
+    height: 90px;
+    display: flex;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.ch-item {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+.ch-back{
+    position: absolute;
+    left: 25px;
+    font-size: 30px;
+    margin: 5px;
+    color: #628AF2;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: none;
+}
+
+.ch-back:hover{
+    color: #87a5f1;
+}
+
+
+.ch-profile {
+    width: 60px;
+    height: 60px;
+}
+.ch-item h4 {
+    font-size: 28px;
+    color: #F8F8F8;
+    margin-left: 15px;
+
+}
+.chat-box {
+    height: 90%;
+    padding: 100px 15px 0px 15px;
+    overflow: scroll;
+
+}
+.chat-box {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.chat-box::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+.chat-message {
+    width: fit-content;
+    background-color: #628AF2;
+    padding: 15px;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.user {
+    margin-left: auto;
+    background-color: white;
+    color: #666666;
+
+}
+
+.chat-input{
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px 0px 0px;
+}
+.ch-input{
+    max-width: 500px;
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid #628AF2;
+    padding-left: 25px;
+    font-size: 17px;
+    margin: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ch-btn{
+    width: 20%;
+    height: 50px;
+    max-width: 100px;
+    background-color: #628AF2;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: all 0.2s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ch-btn:hover{
+    background-color: #87a5f1;
+}
+
+@media screen and (max-width: 968px) {
+    .Chat {
+        position: static;
+        margin-left: 50%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .Chat {
+        width: 100%;
+        position: fixed;
+        margin-left: 0;
+        z-index: 4;
+        display: none;
+    }
+    .chat-on{
+        animation-name: show;
+        animation-duration: 1s;
+        display: block;
+    }
+    .ch-back{
+        display: block;
+    }
+}
+
+@keyframes show{
+    0%{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    50%{
+    }
+}
